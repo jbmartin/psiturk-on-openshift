@@ -8,7 +8,7 @@ on OpenShift.
 Running on OpenShift
 --------------------
 
-Create an account at http://openshift.redhat.com/
+Create an account at http://openshift.redhat.com/ and download the commandline tools at https://www.openshift.com/developers/rhc-client-tools-install
 
 Create a python-2.7 application and add a MySQL cartridge to the app
 
@@ -16,7 +16,7 @@ Create a python-2.7 application and add a MySQL cartridge to the app
 
 or you can do this to watch the build
 
-    rhc app create -a psiturk -t python-2.7 
+    rhc app create -a psiturk -t python-2.7
     rhc cartridge add psiturk -a mysql-5.1
 
 Add this upstream psiturk repo
