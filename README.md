@@ -16,7 +16,8 @@ Create a python-2.7 application and add a MySQL cartridge to the app
 
 or you can do this to watch the build
 
-    rhc app create -a psiturk -t python-2.7 mysql-5.1
+    rhc app create -a psiturk -t python-2.7 
+    rhc cartridge add psiturk mysql-5.1
 
 Add this upstream psiturk repo
 
