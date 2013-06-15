@@ -6,8 +6,7 @@ setup(
     entry_points = {
         'console_scripts': ['psiturk = psiturk.psiturk:run_webserver']
     },
-    install_requires=["Flask", "boto", "SQLAlchemy", "gunicorn", 'MySQL-python'],
-    setup_requires=["Flask", "boto", "SQLAlchemy", "gunicorn", 'MySQL-python'],
+    setup_requires=["Flask", "boto", "SQLAlchemy", "gunicorn", "python-dev", "Flask-SQLAlchemy" 'MySQL-python'],
     author = "NYU Computation and Cognition Lab",
     author_email = "http://nyuccl.org",
     description = "A web framework for dynamic behavioral experiments",
