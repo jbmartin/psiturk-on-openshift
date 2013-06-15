@@ -580,7 +580,8 @@ def regularpage(pagename=None):
 # Initialize database if necessary
 def run_webserver():
     init_db()  
-    app.run(debug=config.getboolean('Server Parameters', 'debug'), host='0.0.0.0', port=config.getint('Server Parameters', 'port'))
+    ip = os.environ['OPENSHIFT_PYTHON_IP']
+    app.run(debug=config.getboolean('Server Parameters', 'debug'), host=ip, port=8080)
 
 if __name__ == '__main__':
     print "Starting webserver."
