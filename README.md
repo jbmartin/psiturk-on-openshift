@@ -10,14 +10,18 @@ Running on OpenShift
 
 Create an account at http://openshift.redhat.com/
 
-Create a python-2.7 application
+Create a python-2.7 application and add a MySQL cartridge to the app
 
-    rhc app create -a psiturk -t python-2.7
+    rhc app create psiturk python-2.7 mysql-5.1 --from-code git://github.com/jbmartin/psiturk-on-openshift.git
+
+or you can do this to watch the build
+
+    rhc app create -a psiturk -t python-2.7 mysql-5.1
 
 Add this upstream psiturk repo
 
     cd psiturk
-    git remote add upstream -m master https://github.com/jbmartin/flask-on-openshift.git
+    git remote add upstream -m master https://github.com/jbmartin/psiturk-on-openshift.git
     git pull -s recursive -X theirs upstream master
 
 Then push the repo upstream
