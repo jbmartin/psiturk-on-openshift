@@ -2,7 +2,6 @@ from setuptools import setup, find_packages
 setup(
     name = "PsiTurk",
     version = "0.1",
-    packages = ["psiturk"],
     entry_points = {
         'console_scripts': ['psiturk = psiturk.psiturk:run_webserver']
     },
