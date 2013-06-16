@@ -12,12 +12,12 @@ Create an account at http://openshift.redhat.com/ and download the commandline t
 
 Create a python-2.7 application and add a MySQL cartridge to the app
 
-    rhc app create psiturk python-2.7 mysql-5.1 --from-code git://github.com/jbmartin/psiturk-on-openshift.git
+    rhc app create psiturk python-2.7 postgresql-8.4 --from-code git://github.com/jbmartin/psiturk-on-openshift.git
 
 or you can do this to watch the build
 
     rhc app create -a psiturk -t python-2.7
-    rhc cartridge add -a psiturk mysql-5.1
+    rhc cartridge add -a psiturk20 postgresql-8.4
 
 Add this upstream psiturk repo
 
