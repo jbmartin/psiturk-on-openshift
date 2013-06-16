@@ -8,9 +8,9 @@ on OpenShift.
 Running on OpenShift
 --------------------
 
-Create an account at http://openshift.redhat.com/ and download the commandline tools at https://www.openshift.com/developers/rhc-client-tools-install
+Create an account at http://openshift.redhat.com/ and download the command line tools at https://www.openshift.com/developers/rhc-client-tools-install
 
-Create a python-2.7 application and add a MySQL cartridge to the app
+Create a python-2.7 application and add a PostgreSQL cartridge to the app
 
     rhc app create psiturk python-2.7 postgresql-8.4 --from-code git://github.com/jbmartin/psiturk-on-openshift.git
 
@@ -32,3 +32,5 @@ Then push the repo upstream
 That's it, you can now checkout your application at:
 
     http://psiturk-$YOURNAMESPACE.rhcloud.com
+
+TODO(): Add GUI instructions
