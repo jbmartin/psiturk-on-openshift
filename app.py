@@ -578,7 +578,7 @@ def initialpage():
     """
     psiTurk landing page.
     """
-    return Welcome to psiTurk!
+    return "Future home of psiTurk dashboard. To begin, please visit /mturk."
 
 ###########################################################
 # let's start
