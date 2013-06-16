@@ -562,7 +562,7 @@ def dumpdata():
     return response
 
 #----------------------------------------------
-# generic route
+# generic routes
 #----------------------------------------------
 @app.route('/<pagename>')
 def regularpage(pagename=None):
@@ -572,6 +572,13 @@ def regularpage(pagename=None):
     if pagename==None:
         raise ExperimentError('page_not_found')
     return render_template(pagename)
+
+@app.route('/')
+def initialpage():
+    """
+    psiTurk landing page.
+    """
+    return Welcome to psiTurk!
 
 ###########################################################
 # let's start
