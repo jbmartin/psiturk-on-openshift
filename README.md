@@ -33,4 +33,12 @@ That's it, you can now checkout your application at:
 
     http://psiturk-$YOURNAMESPACE.rhcloud.com
 
-TODO(): Add GUI instructions
+
+Accessing Your Database
+-----------------------
+
+Run
+
+rhc port forward -a psiturk
+
+Connect to the database using your favorite SQL with the PostgreSQL Local specs and your credentials
