@@ -1,4 +1,5 @@
 import os
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 from sqlalchemy.ext.declarative import declarative_base
@@ -14,7 +15,8 @@ DATABASE = 'postgresql://' + os.environ['OPENSHIFT_POSTGRESQL_DB_USERNAME'] + ':
 engine = create_engine(DATABASE, echo=False)  # connect to db's server
 conn = engine.connect()
 conn.execute("commit")
-try conn.execute('SELECT 1'):
+try:
+    conn.execute('SELECT 1')
     conn.execute("CREATE DATABASE " + DBNAME)  # create db
 except:
     pass
