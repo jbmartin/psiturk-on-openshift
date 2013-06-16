@@ -29,7 +29,7 @@ Then push the repo upstream
 
     git push
 
-That's it, you can now checkout your application at:
+That's it, you can now checkout your application at
 
     http://psiturk-$YOURNAMESPACE.rhcloud.com
 
