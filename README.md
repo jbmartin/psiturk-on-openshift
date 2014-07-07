@@ -1,3 +1,5 @@
+**Openshift support is now a standard feature of [psiTurk](http://www.psiturk.org). Please update to the latest version at [https://github.com/NYUCCL/psiTurk](https://github.com/NYUCCL/psiTurk), as this repo is deprecated.**
+
 psiTurk on OpenShift
 ====================
 
